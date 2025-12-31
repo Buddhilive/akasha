@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Prevent bundling of native modules
+  serverExternalPackages: ["swisseph"],
 };
 
 export default nextConfig;
